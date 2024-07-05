@@ -120,16 +120,15 @@ export default function HomePage() {
 
   return (
     <main className="container">
-      <header>
-      <font style ="Verdana" size = "12">Transaction Record Keeper!</font>
-      </header>
-      {initializeUser()}
+      <header><h1>Transaction Log</h1></header>
+      { initializeUser() }
 
       <style jsx>{`
         .container {
-          text-align: center;
+          text-align: center
         }
-      `}</style>
+      `}
+      </style>
     </main>
-  );
+  )
 }
