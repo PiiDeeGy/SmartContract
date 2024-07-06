@@ -3,25 +3,24 @@ pragma solidity ^0.8.9;
 
 contract Assessment {
 
-    uint256 private storedValue;
-    uint256[] private valueHistory;
-
+    uint256 private transactionLog;
+    uint256[] private transactionHistory;
     event ValueStored(uint256 value);
 
-    function setStoredValue(uint256 newValue) public {
+    function addTransactionLog(uint256 newValue) public {
         require(newValue != 0, "Cannot store value of 0...");
 
-        storedValue = newValue;
-        valueHistory.push(newValue);
+        transactionLog = newValue;
+        transactionHistory.push(newValue);
         emit ValueStored(newValue);
     }
 
-    function getStoredValue() public view returns (uint256) {
-        return storedValue;
+    function fetchTransactionLog() public view returns (uint256) {
+        return transactionLog;
     }
 
-    function getStoreHistory() public view returns (uint256[] memory) {
-        return valueHistory;
+    function fetchTransactionHistory() public view returns (uint256[] memory) {
+        return transactionHistory;
     }
 
 }
