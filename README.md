@@ -35,5 +35,9 @@ After cloning the github, you will want to do the following to get the code runn
 After this, the project will be running on your localhost. 
 Typically at http://localhost:3000/
 
+## Link to User Guide
+
+https://www.loom.com/share/ddf6338f5e8a4e7a9621c7a88a5f2390?sid=3dd0a45f-3d3c-4b9c-9e03-90f3c66bd438
+
 ## Authors
 Angel Cruz - (https://github.com/PiiDeeGy)
